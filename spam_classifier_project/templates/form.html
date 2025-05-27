@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS Spam Classifier</title>
+</head>
+<body>
+    <h1>Enter SMS message:</h1>
+    <form method="post">
+        <textarea name="sms" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Classify">
+    </form>
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
